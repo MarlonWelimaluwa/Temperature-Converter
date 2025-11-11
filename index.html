@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <form>
+        <h1>Temperature Converter</h1>
+        <input type="number" id="temperature" value="0"><br>
+
+        <input type="radio" id="toFahrenheit" name="type-conversion">
+        <label for="toFahrenheit">Celsius to Fahrenheit</label><br>
+
+        <input type="radio" id="toCelsius" name="type-conversion">
+        <label for="toCelsius">Fahrenheit to Celsius</label><br>
+
+        <button type="button" id="convert" onclick="conversion()">Convert</button>
+        <h3 id="message"></h3>
+    </form>
+<script src="script.js"></script>
+</body>
+</html>

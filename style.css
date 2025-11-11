@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'JetBrains Mono', monospace;
+    color: #f5576c;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#temperature {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-family: 'JetBrains Mono', monospace;
+    transition: all 0.3s ease;
+}
+
+#temperature:focus {
+    outline: none;
+    border-color: #f5576c;
+    box-shadow: 0 0 0 3px rgba(245, 87, 108, 0.1);
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #f5576c;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+label:hover {
+    color: #f5576c;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(245, 87, 108, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#message {
+    margin-top: 25px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #f5576c;
+    font-family: 'JetBrains Mono', monospace;
+    min-height: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    form {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #temperature {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #message {
+        font-size: 28px;
+    }
+}
